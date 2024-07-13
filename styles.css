@@ -1,0 +1,339 @@
+/* reset browser preset styling  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* navigation bar */
+
+nav ul a {
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+nav .logo {
+  font-size: 40px;
+  color: black;
+  font-family: "Brush Script MT", cursive;
+  font-weight: lighter;
+  line-height: 80px;
+  padding-left: 30px;
+}
+nav {
+  background-color: rgb(38, 92, 75);
+  color: black;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+}
+/* hamburger menu */
+nav ul {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(38, 92, 75);
+  right: -100%;
+  text-align: center;
+  transition: all 0.5s;
+  padding-top: 40px;
+}
+
+nav ul li {
+  display: block;
+  margin: 50px 0;
+  line-height: 5px;
+  margin-top: 40px;
+}
+
+nav ul li a {
+  color: black;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: block;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  right: 0;
+}
+/* hero section */
+
+.hero {
+  background-color: rgb(38, 92, 75);
+  text-align: center;
+  padding: 100px 20px;
+  color: black;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 30px;
+  color: rgb(34, 26, 19);
+  margin-bottom: 50px;
+}
+/* download cv button */
+#cv_button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: rgba(51, 51, 51, 255);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#cv_button:hover {
+  transform: scale(0.9);
+}
+/* about section */
+#about {
+  padding: 50px 20px;
+  background-color: rgb(20, 101, 81);
+}
+#about h2 {
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  font-size: 30px;
+}
+#about p {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+/* to make image round */
+#about #picture {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 25px brown;
+}
+
+/* skills section */
+#skills {
+  background-color: rgb(0, 117, 102);
+  padding: 60px 20px;
+}
+#skills h2 {
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  font-size: 30px;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.skills-container .row1,
+.skills-container .row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#lang,
+#technologies,
+#tools,
+#dev {
+  padding: 20px 70px;
+  border-radius: 20px;
+  border: 2px solid black; /* Creates a red border of 2px width */
+  /* padding: 20px; */
+}
+.skills-container h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: black;
+}
+.skills-container li {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+/* services section */
+#services {
+  padding-bottom: 30px;
+  background-color: rgb(88, 154, 141);
+}
+#services h2 {
+  padding: 30px 0;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  padding-top: 80px;
+}
+#services ul {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+#services .service-list {
+  padding: 0 20px;
+}
+#services li {
+  padding: 10px;
+  list-style: none;
+  font-size: 20px;
+  color: black;
+}
+/* projects section */
+#projects {
+  background-color: rgb(143, 193, 181);
+}
+#projects h2 {
+  color: black;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 30px;
+}
+#projects h3 {
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+#projects p {
+  line-height: 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+#piggame,
+#guess,
+#modal,
+#pharmacy {
+  justify-content: center;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.projects-container img {
+  padding-top: 20px;
+  width: 250px;
+  height: 200px;
+
+  border-radius: 45px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+}
+
+#projects .control {
+  display: flex;
+  justify-content: center;
+}
+
+#projects #github,
+#demo {
+  display: inline-block;
+  padding: 10px 20px;
+
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 10px 10px;
+}
+#projects #github,
+#demo {
+  background-color: #110e0e;
+}
+
+#projects #github:hover,
+#demo:hover {
+  background-color: rgba(247, 240, 230, 255);
+  color: black;
+}
+#projects #demo:hover {
+  background-color: cornsilk;
+  color: black;
+}
+
+/* contact section */
+#contact {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(88, 154, 141);
+  color: black;
+}
+#contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#contact h2 {
+  font-size: 30px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #110e0e;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 50px 40px 40px;
+}
+#contact form label {
+  font-size: 18px;
+  text-align: left;
+}
+#contact form input,
+#contact form textarea {
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+#contact form button {
+  background-color: #110e0e;
+  color: cornsilk;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}

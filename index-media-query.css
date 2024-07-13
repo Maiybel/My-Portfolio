@@ -1,0 +1,201 @@
+/* for small devices from 576px and above */
+@media (min-width: 576px) {
+  .skills-container li {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+  }
+  #services ul {
+    font-size: 20px;
+  }
+  .projects-container img {
+    width: 450px;
+    height: 250px;
+  }
+
+  #projects h3 {
+    font-size: 30px;
+  }
+  #projects h3 {
+    list-style: 10px;
+  }
+  .projects-container {
+    padding: 10px 30px;
+  }
+  .hero {
+    padding-top: 150px;
+  }
+  nav .logo {
+    padding-left: 70px;
+  }
+  .checkbtn {
+    padding-right: 30px;
+  }
+  nav ul {
+    width: 60%;
+  }
+  #contact {
+    padding-top: 30px;
+  }
+  #contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+/* medium scren  */
+@media (min-width: 768px) {
+  #lang,
+  #technologies,
+  #tools,
+  #dev {
+    margin: 0 60px;
+    margin-bottom: 30px;
+  }
+  #cv_button {
+    padding: 25px 35px;
+    font-size: 20px;
+  }
+  #services li {
+    font-size: 25px;
+  }
+  #about p {
+    margin-top: 20px;
+    max-width: 600px;
+    line-height: 25px;
+  }
+  #about #picture {
+    width: 300px;
+    height: 300px;
+  }
+  .projects-container {
+    padding: 0 60px;
+  }
+  .skills-container li {
+    text-align: center;
+    list-style: none;
+    font-size: 25px;
+  }
+  .projects-container img {
+    width: 700px;
+    height: 300px;
+  }
+  #projects h3 {
+    font-size: 25px;
+  }
+  #projects p {
+    font-size: 20px;
+  }
+  #projects h3 {
+    list-style: 10px;
+  }
+  #contact p {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  #services .service-list {
+    padding: 0 80px;
+  }
+  #contact form {
+    width: 400px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    line-height: 10px;
+    font-size: 70px;
+  }
+}
+/* for large screens */
+
+@media (min-width: 992px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  nav .logo {
+    font-size: 50px;
+    padding-left: 20px;
+  }
+  nav ul {
+    position: static;
+    width: auto;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  /* hide hamburger button */
+  nav .checkbtn {
+    display: none;
+  }
+
+  .skills-container .row1 {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .skills-container .row2 {
+    display: flex;
+  }
+
+  #lang,
+  #technologies,
+  #tools,
+  #dev {
+    margin: 0 auto;
+    padding: 30px 130px;
+  }
+  #dev {
+    padding: 30px 10px;
+  }
+  #tools {
+    padding: 30px 170px;
+  }
+
+  .content {
+    flex-direction: row;
+    padding: 0 50px;
+    gap: 50px;
+  }
+  #about .content p {
+    line-height: 30px;
+  }
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  #piggame,
+  #guess,
+  #modal,
+  #pharmacy {
+    padding: 10px 5px;
+  }
+  #project p {
+    padding: 0 90px;
+  }
+  #contact form {
+    width: 600px;
+
+    margin: 0 auto;
+  }
+  #contact p {
+    font-size: 20px;
+  }
+}
+/* for X-large screens */
+
+@media (min-width: 992px) {
+  #about p {
+    font-size: 25px;
+  }
+  #projects p {
+    font-size: 25px;
+    margin-left: auto;
+  }
+  #services .service-list {
+    padding: 0 120px;
+  }
+}
