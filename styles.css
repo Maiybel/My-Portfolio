@@ -16,7 +16,7 @@ nav ul a:hover {
 
 nav .logo {
   font-size: 40px;
-  color: black;
+  color: white;
   font-family: "Brush Script MT", cursive;
   font-weight: lighter;
   line-height: 80px;
@@ -24,7 +24,7 @@ nav .logo {
 }
 nav {
   background-color: rgb(38, 92, 75);
-  color: black;
+  color: white;
   box-sizing: border-box;
   position: fixed;
   width: 100%;
@@ -32,24 +32,24 @@ nav {
 /* hamburger menu */
 nav ul {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  /* height: 80%; */
   background: rgb(38, 92, 75);
   right: -100%;
   text-align: center;
   transition: all 0.5s;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 nav ul li {
   display: block;
   margin: 50px 0;
   line-height: 5px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 nav ul li a {
-  color: black;
+  color: white;
   padding: 7px 13px;
   border-radius: 3px;
   font-size: 20px;
@@ -59,7 +59,7 @@ nav ul li a {
 
 .checkbtn {
   font-size: 30px;
-  color: black;
+  color: white;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -77,12 +77,15 @@ nav ul li a {
 /* hero section */
 
 .hero {
-  background-color: rgb(38, 92, 75);
   text-align: center;
   padding: 100px 20px;
   color: black;
 }
-
+.hero #picture {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
 .hero h1 {
   font-size: 40px;
   margin-bottom: 20px;
@@ -94,27 +97,30 @@ nav ul li a {
   margin-bottom: 50px;
 }
 /* download cv button */
-#cv_button {
-  display: inline-block;
+#cv_button,
+#hire-me {
+  /* display: inline-block; */
   padding: 15px 25px;
-  background-color: rgba(51, 51, 51, 255);
+  background-color: rgb(38, 92, 75);
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  margin: 10px;
 }
 
-#cv_button:hover {
+#cv_button:hover,
+#hire-me:hover {
   transform: scale(0.9);
 }
 /* about section */
 #about {
   padding: 50px 20px;
-  background-color: rgb(20, 101, 81);
+  background-color: rgb(213, 236, 230);
 }
 #about h2 {
   text-align: center;
-  color: black;
+  color: rgb(38, 92, 75);
   padding-bottom: 20px;
   padding-top: 50px;
   font-size: 30px;
@@ -131,37 +137,38 @@ nav ul li a {
   justify-content: center;
   gap: 30px;
 }
-/* to make image round */
-#about #picture {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  box-shadow: 0 0 25px brown;
-}
 
 /* skills section */
 #skills {
-  background-color: rgb(0, 117, 102);
+  background-color: rgb(213, 236, 230);
   padding: 60px 20px;
 }
 #skills h2 {
   text-align: center;
-  color: black;
+  color: rgb(38, 92, 75);
   padding-bottom: 20px;
   padding-top: 40px;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 .skills-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.skills-container .row1,
-.skills-container .row2 {
+.skill {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(14, 13, 13, 0.2);
+  margin: 10px;
+  flex: 1 1 200px; /* Flex properties for responsiveness */
   display: flex;
+
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
 }
 
 #lang,
@@ -170,14 +177,13 @@ nav ul li a {
 #dev {
   padding: 20px 70px;
   border-radius: 20px;
-  border: 2px solid black; /* Creates a red border of 2px width */
-  /* padding: 20px; */
+  border: 2px solid rgb(145, 142, 142); /* Creates a red border of 2px width */
 }
 .skills-container h3 {
   text-align: center;
   padding-bottom: 20px;
   font-size: 30px;
-  color: black;
+  color: rgb(38, 92, 75);
 }
 .skills-container li {
   font-size: 20px;
@@ -187,19 +193,20 @@ nav ul li a {
 /* services section */
 #services {
   padding-bottom: 30px;
-  background-color: rgb(88, 154, 141);
+  /* background-color: rgb(88, 154, 141); */
 }
 #services h2 {
   padding: 30px 0;
   text-align: center;
-  color: black;
+  color: rgb(38, 92, 75);
   font-size: 30px;
   padding-top: 80px;
 }
 #services ul {
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid rgb(145, 142, 142);
   border-radius: 20px;
+  box-shadow: 0 0 10px rgba(14, 13, 13, 0.2);
 }
 #services .service-list {
   padding: 0 20px;
@@ -212,10 +219,10 @@ nav ul li a {
 }
 /* projects section */
 #projects {
-  background-color: rgb(143, 193, 181);
+  background-color: rgb(213, 236, 230);
 }
 #projects h2 {
-  color: black;
+  color: rgb(38, 92, 75);
   text-align: center;
   padding-top: 80px;
   font-size: 30px;
@@ -223,7 +230,7 @@ nav ul li a {
 #projects h3 {
   text-align: center;
   padding: 10px;
-  color: black;
+  color: rgb(38, 92, 75);
 }
 #projects p {
   line-height: 20px;
@@ -243,9 +250,10 @@ nav ul li a {
 #guess,
 #modal,
 #pharmacy {
+  background-color: white;
   justify-content: center;
   border-radius: 25px;
-  border: 2px solid black;
+  border: 2px solid rgb(145, 142, 142);
   padding: 10px;
   margin: 10px;
 }
@@ -278,16 +286,16 @@ nav ul li a {
 }
 #projects #github,
 #demo {
-  background-color: #110e0e;
+  background-color: rgb(38, 92, 75);
 }
 
 #projects #github:hover,
 #demo:hover {
-  background-color: rgba(247, 240, 230, 255);
+  background-color: rgb(213, 236, 230);
   color: black;
 }
 #projects #demo:hover {
-  background-color: cornsilk;
+  background-color: rgb(213, 236, 230);
   color: black;
 }
 
@@ -295,15 +303,17 @@ nav ul li a {
 #contact {
   text-align: center;
   padding: 20px;
-  background-color: rgb(88, 154, 141);
+  background-color: rgb(176, 231, 220);
   color: black;
 }
 #contact p {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 #contact h2 {
   font-size: 30px;
+  margin-top: 50px;
+  color: rgb(38, 92, 75);
 }
 
 #contact a {
@@ -336,4 +346,44 @@ nav ul li a {
   font-size: 18px;
   border-radius: 4px;
   cursor: pointer;
+}
+/* ------------footer---------- */
+.footer {
+  background-color: rgb(38, 92, 75);
+  color: #fff;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left,
+.footer-center {
+  margin-bottom: 20px;
+}
+
+.footer-left h3,
+.footer-center h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* .social-icons {
+  display: flex;
+} */
+
+.social-icons a {
+  color: #fff;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #3b3a3a;
+  margin-top: 20px;
 }

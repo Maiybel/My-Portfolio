@@ -28,6 +28,7 @@
   nav .logo {
     padding-left: 70px;
   }
+
   .checkbtn {
     padding-right: 30px;
   }
@@ -41,6 +42,10 @@
     font-size: 18px;
     margin-bottom: 10px;
   }
+  .hero #picture {
+    width: 300px;
+    height: 300px;
+  }
 }
 /* medium scren  */
 @media (min-width: 768px) {
@@ -51,10 +56,12 @@
     margin: 0 60px;
     margin-bottom: 30px;
   }
-  #cv_button {
-    padding: 25px 35px;
+  #cv_button,
+  #hire-me {
+    padding: 20px 35px;
     font-size: 20px;
   }
+
   #services li {
     font-size: 25px;
   }
@@ -100,9 +107,36 @@
     width: 400px;
     margin: 0 auto;
   }
+  nav ul {
+    height: 50%;
+  }
   nav ul li {
     line-height: 10px;
     font-size: 70px;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+    padding: 0 20px; /* Add padding space on the sides */
+  }
+
+  .footer-left,
+  .footer-center {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .footer-center,
+  .fotter-ceter .social-icons {
+    text-align: right; /* Align social icons to the right on larger screens */
+  }
+
+  .social-icons a {
+    margin-right: 40px;
+  }
+  .footer-center h3 {
+    margin-right: 100px;
   }
 }
 /* for large screens */
@@ -155,12 +189,15 @@
   }
 
   .content {
-    flex-direction: row;
-    padding: 0 50px;
     gap: 50px;
+    width: 100%;
+    margin: 0 auto;
   }
   #about .content p {
     line-height: 30px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
   }
   .projects-container {
     flex-direction: row;
@@ -184,10 +221,48 @@
   #contact p {
     font-size: 20px;
   }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin: auto 50px;
+  }
+  .hero #picture {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    order: 2;
+    /* margin-right: 20px; */
+  }
+  .hero .hero-content {
+    padding-left: 10px;
+    justify-content: center;
+  }
+
+  .hero .hero-content .hero-buttons {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* margin-left: 40px; */
+  }
+
+  #about .content p {
+    font-size: 30px;
+  }
+  .skill {
+    flex: 0 0 auto;
+  }
+  #lang,
+  #technologies {
+    margin-bottom: 50px;
+  }
 }
 /* for X-large screens */
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #about p {
     font-size: 25px;
   }
@@ -197,5 +272,19 @@
   }
   #services .service-list {
     padding: 0 120px;
+  }
+  .hero {
+    margin: 0 100px;
+  }
+  .hero .hero-content {
+    padding-left: 10px;
+  }
+  .hero .hero-content p {
+    /* padding-left: 100px; */
+    text-align: center;
+  }
+  .hero-buttons {
+    align-items: center;
+    justify-content: center;
   }
 }
